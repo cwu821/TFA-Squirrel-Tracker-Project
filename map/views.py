@@ -5,9 +5,9 @@ from django.http import HttpResponse
 from .models import Squirrels
 
 def index(request):
-    squirrels = Squirrels.objects.all()
+    squirrels = Squirrels.objects.all()[:30]
     context = {
             'squirrels': squirrels,
     }
-    return render(request, 'map/index.html', context)
+    return render(request, 'map/map.html', context)
 # Create your views here.
