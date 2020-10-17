@@ -26,8 +26,8 @@ class Squirrels(models.Model):
     shift = models.CharField(
             help_text=_('shift choice, AM or PM'),
             choices=SHIFT_CHOICES,
-            default='Unknown',
             max_length=2,
+            null=True,
     )
         
     date = models.DateField(
@@ -45,8 +45,8 @@ class Squirrels(models.Model):
     age = models.CharField(
             help_text=_('Age of squirrel'),
 	    choices=AGE_CHOICES,
-	    default='Unknown',
             max_length=50,
+            null=True,
     )
 
     GRAY = 'Gray'
@@ -62,8 +62,8 @@ class Squirrels(models.Model):
     primary_fur_color = models.CharField(
 		help_text = _('Primary fur color'),
 		choices = COLOR_CHOICES,
-		default = 'Unknown',
                 max_length=50,
+                null=True,
 	)
 
     ABOVE_GROUND = 'Above Ground'
@@ -78,12 +78,14 @@ class Squirrels(models.Model):
     location = models.CharField(
 	    help_text = _('location: above ground or ground plane'),
 	    choices = LOCATION_CHOICES,
-	    default = 'Unknown',
             max_length=50,
+            null=True,
     )
 
-    specific_location = models.TextField(
-	    blank = True,
+    specific_location = models.CharField(
+            help_text = _('Sepecific location'),
+            max_length=100,
+	    null = True,
     )
         
     running = models.BooleanField(
@@ -101,10 +103,10 @@ class Squirrels(models.Model):
     foraging = models.BooleanField(
             help_text = _('whether the squirrel is foraging')
         )
-    other_activities = models.TextField(
+    other_activities = models.CharField(
 	    help_text = _('other activities'),
 	    max_length = 150,
-	    blank = True,
+	    null = True,
         )
     kuks = models.BooleanField(
             help_text = _('kuks sound')

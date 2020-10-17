@@ -1,4 +1,11 @@
 <!doctype html>
 <html>
-	<body> Hi! </body>
+       <body>
+       <ul>   
+               {% for squirrel in squirrels%}
+               <li>{{ squirrel }} </li>
+               {% endfor %}
+       </ul>  
+       </body>
 </html>
+
