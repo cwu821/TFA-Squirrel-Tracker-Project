@@ -26,7 +26,7 @@ def update(request, unique_squirrel_id):
         form = UpdateForm(instance=squirrel)
 
     context = {
-        'squirrel': form,
+            'form': form,
     }
 
     return render(request, 'sightings/update.html', context)
