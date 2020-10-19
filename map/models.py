@@ -143,4 +143,4 @@ class Squirrels(models.Model):
 
 
 
-# Create your models here.
+# Create your models ere.
