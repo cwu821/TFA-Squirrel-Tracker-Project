@@ -86,6 +86,7 @@ class Squirrels(models.Model):
             help_text = _('Sepecific location'),
             max_length=100,
 	    null = True,
+            blank = True,
     )
         
     running = models.BooleanField(
@@ -107,6 +108,7 @@ class Squirrels(models.Model):
 	    help_text = _('other activities'),
 	    max_length = 150,
 	    null = True,
+            blank = True,
         )
     kuks = models.BooleanField(
             help_text = _('kuks sound')

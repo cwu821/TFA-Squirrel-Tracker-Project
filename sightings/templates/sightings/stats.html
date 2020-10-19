@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html>
+
+
+	<body>
+	<form method = 'GET'>
+		<h1> Squirrels Sightings Statistics </h1>
+		
+		<br>
+		Total Counts:
+		<ul>
+			<li>There is a total of {{total_count}} squirrels </li>
+		</ul>
+		<br>
+
+		Age Stats:
+		<ul>
+			<li> Count of Adult Squirrels: {{age_adult}} </li>
+			<li> Count of Juvenile Squirrels: {{age_juvenile}} </li>
+
+		</ul>
+
+		<br>
+		Location Stats:
+		<ul>
+                        <li> Count of Above Ground Squirrels: {{location_above}} </li>
+                        <li> Count of Ground Plane Squirrels: {{location_plane}} </li>
+                </ul>
+		<br>
+
+		Movement Stats:
+		<ul>
+			<li> Count of Running Squirrels: {{running_true}} </li>
+			<li> Count of Eating Squirrels: {{eating_true}} </li>
+			<li> Count of Approaching Squirrels: {{approach_true}} </li>
+		</ul>
+	</form>
+	</body>
+</html>
