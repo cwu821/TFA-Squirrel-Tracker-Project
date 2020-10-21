@@ -3,7 +3,7 @@ import datetime
 
 from django.core.management.base import BaseCommand, CommandError
 
-from .models import Squirrels
+from map.models import Squirrels
 
 def str_to_bool(x):
     if x.lower() == 'true':
