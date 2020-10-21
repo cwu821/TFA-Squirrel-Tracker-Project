@@ -20,12 +20,12 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         path = kwargs['path']
-        
+
         try:
             with open(path, encoding='utf-8') as fp:
                 reader = csv.DictReader(fp)
-            
-               
+
+
                 for item in reader:
                     squirrel = Squirrels.objects.filter(
                     unique_squirrel_id=item['Unique Squirrel ID'])
@@ -36,8 +36,8 @@ class Command(BaseCommand):
                         latitude=item['Y'],
                         unique_squirrel_id=item['Unique Squirrel ID'],
                         shift=item['Shift'],
-                        date=datetime.date(int(item['Date'][-4:]),int(item['Date'][:2]),int(item['Date'][2:4])),    
-                        age=item['Age'], 
+                        date=datetime.date(int(item['Date'][-4:]),int(item['Date'][:2]),int(item['Date'][2:4])),   
+                        age=item['Age'],
                         primary_fur_color=item['Primary Fur Color'],
                         location=item['Location'],
                         specific_location=item['Specific Location'],
@@ -64,3 +64,4 @@ class Command(BaseCommand):
 
         #except:
              #raise ValueError("Something is wrong with the data!")
+
