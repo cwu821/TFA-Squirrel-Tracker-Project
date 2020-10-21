@@ -2,15 +2,30 @@
 <html>
     <body>
     
-    <p><a href='add/'> Add a new sighting</a> </p>
-    <p><a href='stats/'> View Stats </a> </p>
-    <p>
-    <ul>
-	{% for squirrel in squirrels %}
-	<li><a href="{{squirrel.unique_squirrel_id}}"> {{ squirrel.unique_squirrel_id }} </a></li>
-    	{% endfor %}
-    </ul>
-    </p>
+	<p>
+	
+	<form action = 'add/'> 
+		<button type = 'submit'> Add a new sighting </button>
+	</form>
+	
+	</p>
+    
+	
+	<p>
+
+        <form action = 'stats/'>
+                <button type = 'submit'> View sightings stats </button>
+        </form>	
+	
+	
+	</p>
+    	<p>
+    	<ul>
+		{% for squirrel in squirrels %}
+		<li><a href="{{squirrel.unique_squirrel_id}}"> {{ squirrel.unique_squirrel_id }} </a></li>
+    		{% endfor %}
+    	</ul>
+   	</p>
     </body>
 
 </html>
