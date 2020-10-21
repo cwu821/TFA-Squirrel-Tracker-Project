@@ -1,15 +1,49 @@
 <!doctype html>
 
-<head> Squirrel Sightings Home Page </head>
+<head> 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<body>
-	<h1> This is the home page </h1>
+    	<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+<style>
+
+.center {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 70px 0;
+}
+</style>
+
+</head>
+
+<body style="background-color:hsla(30,55%,75%);">
+	
+<div class = "center">
+
+	<h1 style="font-size:200%;">Squirrel Tracking Home Page </h1>
+	<br>
 	<form action = 'sightings/'>
-		<button type='submit'> View lists of squirrels sightings </button>
+		<button type='submit'> View Lists of Squirrels Sightings </button>
 	</form>
+	<br>
 	<form action = 'map/'>
-		<button type='submit'> View sightings on map </button>
+		<button type='submit'> View Sightings on Map </button>
 	</form>
+	<br>
+	<form action = 'sightings/stats/'>
+		<button type = 'submit'> View Sightings Stats </button>
+	</form>
+	<br>
+	<br>
+	<p>Distributed by Catherine Wu and Yunfeng Wang </p>
+
+</div>
+
 </body>
 </html>
