@@ -69,4 +69,8 @@ def stats(request):
             'approach_true': approach_true,
     }
     return render(request, 'sightings/stats.html',context)
+
+def home(request):
+    return render(request, 'sightings/home.html')
+
 #Create your views here.
