@@ -1,5 +1,5 @@
 # TFA-Squirrel-Tracker-Project
-## Team information
+## Team Information
 Team member: Catherine Wu (cjw2175), Yunfeng Wang (yw3584).
 
 ## Project Description
@@ -8,5 +8,5 @@ This project uses Django to create a web that displays the squirrel sightings in
 
 The squirrel data used in this project can be found at: https://data.cityofnewyork.us/api/views/vfnx-vebw/rows.csv
 
-## Link to the server running our application
+## Link to the Server Running Our Application
 https://tfa-2020-fall-cjw2175.wl.r.appspot.com/
